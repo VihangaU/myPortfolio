@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Menu</div>
+        
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://vihangau.github.io/certificates/">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Menu</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-link">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="https://vihangau.github.io/certificates/" onclick="toggleMenu()">Certifications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Profile_Picture.png" alt="Profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Vihanga Liyanaarachchi</h1>
+            <p class="section__text__p2">Web Developer<br>Mobile App Developer</p>
+            <div class="btn-container">
+                <button
+                 class="btn btn-color-2"
+                 onclick="window.open('./assets/Vihanga_Liyanaarachchi.pdf')">
+                 Download CV
+               </button>
+               <button
+                class="btn btn-color-1"
+                onclick="location.href='#contact'">
+                Contact Info
+               </button>
+            </div>
+            <div id="social-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My Linkedin Profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/vihanga-liyanaarachchi-47b833316/'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="My Github Profile"
+                class="icon"
+                onclick="location.href='https://github.com/VihangaU'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about"><br><br><br><br><br><br><br>
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1><br>
+        <div class="section-container">
+            <div class="section__text-container">
+                <p class="about">Motivated Software Engineering undergraduate
+                    with a strong foundation in programming,
+                    problem-solving, and software development.
+                    Proficient in programming languages with
+                    hands-on experience in developing applications
+                    and participating in collaborative projects.
+                    Known for a keen attention to detail, a passion
+                    for learning new technologies, and a
+                    commitment to producing high-quality code.</p>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                          src="./assets/experience.png" 
+                          alt="Experience icon"
+                          class="icon"
+                          />
+                          <h3>Experience</h3>
+                          <p>2+ years <br/>Web Developer</p><br><br>
+                          <p>1+ years<br>Mobile App Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                          src="./assets/education.png" 
+                          alt="Education icon"
+                          class="icon"
+                          />
+                          <h3>Education</h3>
+                          <p>BSc(Hons) in Software Engineering<br/>Undergraduate at SLIIT</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <img  
+          src="./assets/arrow.png"  
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Web Developement</h2>
+                    <div class="article-container">
+                        <h3>HTML</h3>
+                        <article>                            
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-1" data-progress="95"></div>
+                                    <span class="progress-label">95%</span>
+                                </div>
+                            </div>
+                        </article>
+                        <h3>CSS</h3>
+                        <article>
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-2" data-progress="93"></div>
+                                    <span class="progress-label">93%</span>
+                                </div>
+                            </div>
+                        </article>
+                        <h3>PHP</h3>
+                        <article>
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-3" data-progress="80"></div>
+                                    <span class="progress-label">80%</span>
+                                </div>
+                            </div>
+                        </article>
+                        <h3>Java</h3>
+                        <article>
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-4" data-progress="90"></div>
+                                    <span class="progress-label">90%</span>
+                                </div>
+                            </div>
+                        </article>
+                        <h3>C/ C++/ C#</h3>
+                        <article>
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-5" data-progress="85"></div>
+                                    <span class="progress-label">85%</span>
+                                </div>
+                            </div>
+                        </article>
+                        <h3>Python</h3>
+                        <article>
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-6" data-progress="80"></div>
+                                    <span class="progress-label">80%</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Mobile App Developement</h2>
+                    <div class="article-container">
+                        <h3>Kotlin</h3>
+                        <article>
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-5" data-progress="75"></div>
+                                    <span class="progress-label">75%</span>
+                                </div>
+                            </div>
+                        </article>
+                        <h3>Dart</h3>
+                        <article>
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-4" data-progress="70"></div>
+                                    <span class="progress-label">70%</span>
+                                </div>
+                            </div>
+                        </article>
+                        <h3>Flutter</h3>
+                        <article>
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-1" data-progress="60"></div>
+                                    <span class="progress-label">60%</span>
+                                </div>
+                            </div>
+                        </article>
+                        <h3>React Native</h3>
+                        <article>
+                            <div class="progress-section">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-section-3" data-progress="65"></div>
+                                    <span class="progress-label">65%</span>
+                                </div>
+                            </div>
+                        </article>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img  
+          src="./assets/arrow.png"  
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                     src="./assets/insurance.png"  
+                     alt="Project 1" 
+                     class="project-img"
+                     />
+                     <h2 class="experience-sub-title project-title">Vehicle Insurance Management System</h2>
+                     <div class="btn-container">
+                        <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/VihangaU/Auto_Guard---WebApplication'">
+                                Github
+                       </button>
+                       <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='./assets/insurance.mp4'">
+                                Live Demo
+                      </button>
+                     </div>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                     src="./assets/cricket.png"  
+                     alt="Project 1" 
+                     class="project-img"
+                     />
+                     <h2 class="experience-sub-title project-title">UI/UX Design</h2>
+                     <div class="btn-container">
+                        <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://www.figma.com/design/bs1d8rYwbRG2r9qS9AjJvc/CricSnap?node-id=0-1&t=6byRU1Nui9WfAuHC-1'">
+                                Figma
+                       </button>
+                       <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='./assets/uiux.mp4'">
+                                Live Demo
+                      </button>
+                     </div>
+                </div>
+            </div>
+            
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                     src="./assets/task.png"  
+                     alt="Project 3" 
+                     class="project-img"
+                     />
+                     <h2 class="experience-sub-title project-title">Task App</h2>
+                     <div class="btn-container">
+                        <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/VihangaU/task-app'">
+                                Github
+                       </button>
+                       <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='./assets/taskApp.webm'">
+                                Live Demo
+                      </button>
+                     </div>
+                </div>
+            </div>
+            </div>
+            <div class="about-containers">                
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                         src="./assets/tea.png"  
+                         alt="Project 2" 
+                         class="project-img"
+                         />
+                         <h2 class="experience-sub-title project-title">Tea Factory Management System</h2>
+                         <div class="btn-container">
+                            <button 
+                                    class="btn btn-color-2 project-btn"
+                                    onclick="location.href='https://www.linkedin.com/posts/vihanga-liyanaarachchi-47b833316_managementsystem-dotnetframework-vuejs-activity-7218150866984312832-mxvz?utm_source=share&utm_medium=member_desktop'">
+                                    Github
+                           </button>
+                           <button 
+                                    class="btn btn-color-2 project-btn"
+                                    onclick="location.href='./assets/teaFac.mp4'">
+                                    Live Demo
+                          </button>
+                         </div>
+                    </div>
+                </div>
+                <div class="details-container color-container" style="border: white;">
+                    
+                </div>
+                <div class="details-container color-container" style="border: white;">
+                    
+                </div>
+                </div>
+        </div>
+        <img  
+          src="./assets/arrow.png"  
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"/>
+    </section><br><br><br>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                  src="./assets/email.png" 
+                  alt="Email icon"
+                  class="icon contact-icon email-icon "
+                  />
+                  <p><a href="mailto:upamal2001@gmail.com">upamal2001@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                  src="./assets/linkedin.png" 
+                  alt="Linkedin icon"
+                  class="icon contact-icon"
+                  />
+                  <p><a href="https://www.linkedin.com/in/vihanga-liyanaarachchi-47b833316/">LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                  src="./assets/phone.png" 
+                  alt="Phone icon"
+                  class="icon contact-icon"
+                  />
+                  <p><a href="#contact">071-6891997</a></p>
+            </div>
+        </div>
+    </section><br><br><br>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://vihangau.github.io/certificates/">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Vihanga. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

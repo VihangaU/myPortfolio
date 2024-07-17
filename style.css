@@ -460,7 +460,7 @@ footer p{
     transition: width 1s;
 }
 
-.progress-label {
+/* .progress-label {
     position: absolute;
     width: 100%;
     text-align: center;
@@ -469,7 +469,7 @@ footer p{
     line-height: 30px;
     color: #fff;
     font-weight: bold;
-}
+} */
 
 #progress-section-1{
     background-color: #33EC0E;

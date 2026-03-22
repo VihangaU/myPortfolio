@@ -9,8 +9,6 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">VL</div>
-
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -22,22 +20,29 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">VL</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="menu-link">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="https://vihangau.github.io/certificates/" onclick="toggleMenu()">Certifications</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
         </div>
     </nav>
+    <div class="sidebar-overlay" onclick="toggleMenu()"></div>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="close-icon" onclick="toggleMenu()">
+                <span>&times;</span>
+            </div>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="https://vihangau.github.io/certificates/" onclick="toggleMenu()">Certifications</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
     <section id="profile">
         <div class="profile-content">
             <div class="section__text">
@@ -351,7 +356,7 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &copy; 2025 Vihanga Liyanaarachchi. All Rights Reserved.</p>
+        <p>Copyright &copy; 2026 Vihanga Liyanaarachchi. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -1,8 +1,19 @@
 function toggleMenu() {
-    const menu = document.querySelector(".menu-link");
+    const sidebar = document.querySelector(".sidebar");
+    const overlay = document.querySelector(".sidebar-overlay");
     const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
+    const body = document.body;
+
+    sidebar.classList.toggle("open");
+    overlay.classList.toggle("open");
     icon.classList.toggle("open");
+
+    // Prevent body scroll when sidebar is open
+    if (sidebar.classList.contains("open")) {
+        body.style.overflow = "hidden";
+    } else {
+        body.style.overflow = "";
+    }
 }
 
 // Smooth scroll behavior for navigation links

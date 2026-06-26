@@ -28,7 +28,7 @@
 
     #hamburger-nav {
         display: flex !important;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         position: fixed;
         top: 0;
@@ -100,7 +100,7 @@
 
     #hamburger-nav {
         display: flex !important;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         position: fixed;
         top: 0;
@@ -187,7 +187,7 @@
 
     #hamburger-nav {
         display: flex !important;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         position: fixed;
         top: 0;
@@ -201,6 +201,15 @@
 
     .logo {
         font-size: 1.5rem;
+    }
+
+    .nav-brand-text {
+        display: none;
+    }
+
+    .nav-logo {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .title {
